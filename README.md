@@ -12,36 +12,64 @@ This project highlights the capabilities to use multiple temporal and revenue co
 
 ## Workflow Overview
 
-### 1. **Data Cleaning & Validation**
-- Parsed and standardized monetary fields, dates, and column formats.
-- Verified logical consistency across sales outcomes and pipeline stages.
+### Data Cleaning & Validation
 
-### 2. **Territory-Level Quota Forecasting**
-- Aggregated 8 quarters of historical sales.
-- Forecasted Q3 2015 sales using:
-  - **60% recent quarter (Q2)**
-  - **40% historical average**
-  - Applied ±35% cap for stability.
+- Standardized column formats, parsed date fields, and normalized casing across all text fields.
+- Converted monetary and percentage values into numeric format.
+- Validated logic between stage, closed, and won flags.
+- Removed invalid or mismatched entries (e.g., closed deals without proper stage labeling).
 
-### 3. **SDR Contribution-Based Target Setting**
-- Calculated each SDR's sales contribution in Q2 within their territory.
-- Used this to derive a **custom Q3 target per SDR** based on territory forecasts.
 
-### 4. **Bayesian Modeling for Forecast Accuracy**
-- Built Bayesian models per SDR using:
-  - Historical average and std dev of sales
-  - Q3 forecasted target
-- Output:
-  - Posterior mean sales
-  - Probability of meeting or exceeding quota
-  - 94% credible intervals
-  - Risk classification (high, moderate, low)
+### Feature Engineering
+
+- Created temporal fields: year, quarter, year_quarter, quarter_index.
+- Generated territory_id by combining region and product.
+- Aggregated performance by SDR × Territory × Quarter, enabling historical trend analysis.
+- Engineered weighted average sales per SDR.
+- Derived Q2 contribution ratio per SDR relative to their territory's total sales.
+
+
+### Territory & SDR-Level Forecasting
+
+Forecasted Q3 2015 performance at the territory level using:
+
+- 60% weight on Q2 actuals
+- 40% on 8-quarter historical average
+- Applied ±35% cap to avoid extreme shifts.
+
+
+Forecasted Q3 targets for each SDR using:
+
+- Their Q2 sales contribution * Q3 territory forecast
+- Their individual weighted historical sales average
+- Output: custom Q3 target per rep
+
+
+### Bayesian Modeling for SDR Performance Probability
+
+Built individual Bayesian models to estimate:
+
+- Probability of meeting or exceeding Q3 forecast
+- Posterior mean sales for each SDR
+- 94% credible intervals
+- Sales pressure index (expected / historical average)
+- Risk flag: high, moderate, or low
+
+
+**Prior distribution:**
+
+sales ~ Normal(mean=weighted_avg_sales, std_dev=historical_sales_std or fallback)
+
+
+Outcome: Probabilistic insight into quota attainability and territory planning
+
+
 
 ---
 
 ## Final Outcome
 
-This process provided a fair, data-backed quota setting system and helped identify which SDRs were most at risk of missing targets — all powered by Bayesian forecasting.
+This process provided a fair, data-backed quota setting system and helped identify which SDRs were most at risk of missing targets.
 
 ---
 
