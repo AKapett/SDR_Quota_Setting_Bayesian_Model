@@ -8,6 +8,8 @@ This project analyzes SDR (Sales Development Representative) performance data to
 
 I sourced the SDR sales dataset from **Kaggle**, cleaned and validated it, and built a multi-phase analysis pipeline to evaluate and forecast SDR success at both the **territory** and **rep** level.
 
+-> [Notebook](https://github.com/AKapett/SDR_Quota_Setting_Bayesian_Model/blob/main/SDR%20%20Quota%20Forecasting%20%26%20Rep%20Bayesian.ipynb) 
+
 *Coming Soon*:
 
 *Will have an interactive Tableau Dashboard soon to easily find common SDR markers, like Region Performance, Product Performance, Rep, etc.*
