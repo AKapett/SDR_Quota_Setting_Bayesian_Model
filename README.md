@@ -52,6 +52,6 @@ This process provided a fair, data-backed quota setting system and helped identi
 ---
 
 ## Tools Used
-- Python (Pandas, PyMC, ArviZ, Seaborn, Matplotlib)
+- Python (Pandas, PyMC, ArviZ)
 - Jupyter Notebook
 - Data source: [Kaggle Data Source](https://www.kaggle.com/datasets/rahuldhanola/salesforce-sales-quota-data)
