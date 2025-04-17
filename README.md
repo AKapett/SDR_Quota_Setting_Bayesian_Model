@@ -10,9 +10,7 @@ I sourced the SDR sales dataset from **Kaggle**, cleaned and validated it, and b
 
 -> [Notebook](https://github.com/AKapett/SDR_Quota_Setting_Bayesian_Model/blob/main/SDR%20%20Quota%20Forecasting%20%26%20Rep%20Bayesian.ipynb) 
 
-*Coming Soon*:
-
-*Will have an interactive Tableau Dashboard soon to easily find common SDR markers, like Region Performance, Product Performance, Rep, etc.*
+-> [Interactive Reporting](https://public.tableau.com/views/SDRQuarterlyIntelligence-Performance-Trends/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
