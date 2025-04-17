@@ -29,7 +29,7 @@ This project highlights the capabilities to use multiple temporal and revenue co
 
 ### 4. **Bayesian Modeling for Forecast Accuracy**
 - Built Bayesian models per SDR using:
-  - Historical average and std dev of sales (excluding Q3)
+  - Historical average and std dev of sales
   - Q3 forecasted target
 - Output:
   - Posterior mean sales
