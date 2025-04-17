@@ -1,6 +1,6 @@
 # SDR Territory Quota Forecasting with Bayesian Modeling
 
-This project analyzes SDR performance data to strategically forecast territory-level quotas and estimate the probability that each SDR will meet their target using Bayesian inference. The execution is presented in Jupyter, alongside an interactive Tableau dashboard reporting performance across employees, regions, products, and opportunity types. A second dashboard visualizes performance trends over time.
+This project analyzes SDR performance data to strategically forecast territory-level quotas and estimate the probability that each SDR will meet their target using Bayesian inference. The execution is presented in Jupyter, alongside interactive Tableau dashboards. In it there is performance reporting across employees, regions, products, and opportunity types. A second dashboard visualizes those performance trends over time.
 
 -> [Notebook](https://github.com/AKapett/SDR_Quota_Setting_Bayesian_Model/blob/main/SDR%20%20Quota%20Forecasting%20%26%20Rep%20Bayesian.ipynb) 
 
