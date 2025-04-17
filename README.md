@@ -1,12 +1,8 @@
 # SDR Territory Quota Forecasting with Bayesian Modeling
 
-This project analyzes SDR (Sales Development Representative) performance data to fairly forecast territory-level quotas and estimate the **probability that each SDR will hit their target** using Bayesian inference.
+This project analyzes SDR performance data to fairly forecast territory-level quotas and estimate the **probability that each SDR will hit their target** using Bayesian inference. Below is the execution in Jupyter as well as an interactive dashboard reporting on performance across employees, region, product, and opportunity type. A second dashboard shows trends in performance over time for those same factors.
 
----
-
-## Project Summary
-
-I sourced the SDR sales dataset from **Kaggle**, cleaned and validated it, and built a multi-phase analysis pipeline to evaluate and forecast SDR success at both the **territory** and **rep** level.
+This project highlights the capabilities to use multiple temporal and revenue contributing factors to strategically set quotas as well as confidently predict performance using Bayesian probabilities.
 
 -> [Notebook](https://github.com/AKapett/SDR_Quota_Setting_Bayesian_Model/blob/main/SDR%20%20Quota%20Forecasting%20%26%20Rep%20Bayesian.ipynb) 
 
